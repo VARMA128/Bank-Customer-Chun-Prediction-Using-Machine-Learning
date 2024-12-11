@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BANK CUSTOMER CHURN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            background-image: url("https://repository-images.githubusercontent.com/428246670/c60ce366-8c32-4137-a30c-897ae97c5c1c"); /* Replace with your image path */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; /* Adjust size behavior as needed */
+            font-family: 'Arimo', sans-serif; /* Example font family */
+            color: #333; /* Example text color */
+        }
+
+        .container {
+            max-width: 800px; /* Adjust as needed */
+            margin: 0 auto; /* Center align the container */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Example semi-transparent white background */
+            border-radius: 10px; /* Example rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Example shadow effect */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group select {
+            appearance: none; /* Remove default styling for select */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url(); /* Example arrow for select */
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+            background-position-y: 50%;
+            padding-right: 30px; /* Space for the arrow */
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; font-family: 'Pacifico', cursive;">BANK CUSTOMER CHURN</h1>
+        <form class="form-group" action="{{ url_for('predict') }}" method="post">
+            <div class="form-group">
+                <label for="CreditScore">Credit Score</label>
+                <input type="number" name="CreditScore" placeholder="Enter Credit Score" required>
+            </div>
+            <div class="form-group">
+                <label for="Geography">Geography</label>
+                <select name="Geography" id="Geography" required>
+                    <option value="">Select Geography</option>
+                    <option value="0">Germany</option>
+                    <option value="1">France</option>
+                    <option value="2">Spain</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Gender">Gender</label>
+                <select name="Gender" id="Gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="0">Female</option>
+                    <option value="1">Male</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Age">Age</label>
+                <input type="number" name="Age" placeholder="Enter Age" required>
+            </div>
+            <div class="form-group">
+                <label for="Tenure">Tenure</label>
+                <input type="number" name="Tenure" placeholder="Enter Tenure" required>
+            </div>
+            <div class="form-group">
+                <label for="Balance">Balance</label>
+                <input type="number" name="Balance" placeholder="Enter Balance" required>
+            </div>
+            <div class="form-group">
+                <label for="NumOfProducts">Number of Products</label>
+                <select name="NumOfProducts" id="NumOfProducts" required>
+                    <option value="">Select Number of Products</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="HasCrCard">Has Credit Card</label>
+                <select name="HasCrCard" id="HasCrCard" required>
+                    <option value="">Select</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="IsActiveMember">Is Active Member</label>
+                <select name="IsActiveMember" id="IsActiveMember" required>
+                    <option value="">Select</option>
+                    <option value="1">Active</option>
+                    <option value="0">Not Active</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="EstimatedSalary">Estimated Salary</label>
+                <input type="number" name="EstimatedSalary" placeholder="Enter Estimated Salary" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Predict</button>
+            </div>
+        </form>
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>
