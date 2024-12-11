@@ -25,3 +25,15 @@ Predict customer churn using machine learning algorithms.
 Provide actionable insights for proactive retention strategies.
 Enhance bank profitability by reducing churn-related losses.
 
+## 6. Features
+Customer churn prediction with high accuracy.
+Visualization of important features influencing churn.
+Comparison of multiple machine learning models.
+Easy deployment using Flask for user-friendly interaction.
+
+## 7. System Architecture
+Include a diagram (e.g., flowchart of modules like data ingestion, preprocessing, training, and prediction).
+### Modules:
+Data Engineering: Ingestion, preprocessing, model deployment.
+Data Science: Model training, evaluation, feature engineering.
+Business Analysis: Model explainability, visualization, reporting.
