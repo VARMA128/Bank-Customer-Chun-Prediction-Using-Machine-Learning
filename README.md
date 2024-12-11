@@ -17,10 +17,10 @@ This project uses machine learning algorithms to predict customer churn in banks
 - Technologies Used
 - Results
 
-## 4.Introduction
+## 4. Introduction
 The banking industry faces significant challenges in retaining customers, with churn being a critical issue. This project aims to predict and reduce customer churn by analyzing factors like account activity, demographic details, and transaction history.
 
-## 5.Objectives
+## 5. Objectives
 Predict customer churn using machine learning algorithms.
 Provide actionable insights for proactive retention strategies.
 Enhance bank profitability by reducing churn-related losses.
