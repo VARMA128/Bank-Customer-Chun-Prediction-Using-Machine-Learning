@@ -37,3 +37,19 @@ Include a diagram (e.g., flowchart of modules like data ingestion, preprocessing
 Data Engineering: Ingestion, preprocessing, model deployment.
 Data Science: Model training, evaluation, feature engineering.
 Business Analysis: Model explainability, visualization, reporting.
+## 8. Installation
+- 1. Clone the repository:
+### bash
+git clone https://github.com/your-username/churn-prediction.git
+cd churn-prediction
+Install dependencies:
+bash
+Copy code
+pip install -r requirements.txt
+Run the Flask application:
+bash
+Copy code
+python app.py
+Open the application in your browser at http://127.0.0.1:5000.
+9. Usage
+Access the web interface.
