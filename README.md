@@ -65,4 +65,4 @@ Open the application in your browser at http://127.0.0.1:5000.
 
 ## 11. Results
 - Models compared: Logistic Regression, Random Forest, Decision Tree, Naive Bayes.
-- Best Model: Logistic Regression with an accuracy of 88%.
+- Best Model: Random Forest with an accuracy of 87%.
