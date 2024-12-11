@@ -38,18 +38,31 @@ Data Engineering: Ingestion, preprocessing, model deployment.
 Data Science: Model training, evaluation, feature engineering.
 Business Analysis: Model explainability, visualization, reporting.
 ## 8. Installation
-- 1. Clone the repository:
-### bash
+### Clone the repository:
+bash:
 git clone https://github.com/your-username/churn-prediction.git
 cd churn-prediction
-Install dependencies:
-bash
+### Install dependencies:
+bash:
 Copy code
 pip install -r requirements.txt
-Run the Flask application:
+###  Run the Flask application:
 bash
 Copy code
 python app.py
 Open the application in your browser at http://127.0.0.1:5000.
-9. Usage
-Access the web interface.
+
+## 9. Usage 
+- Access the web interface.
+- Input customer details (e.g., balance, credit score, activity).
+- Click Predict to view the churn likelihood.
+
+## 10. Technologies Used
+- Programming Language: Python
+- Frameworks: Flask (Web), scikit-learn, Pandas, NumPy, Matplotlib, Seaborn
+- Visualization: Heatmaps, Pair plots, Histograms
+- Deployment: Flask Web Framework
+
+## 11. Results
+- Models compared: Logistic Regression, Random Forest, Decision Tree, Naive Bayes.
+- Best Model: Logistic Regression with an accuracy of 88%.
