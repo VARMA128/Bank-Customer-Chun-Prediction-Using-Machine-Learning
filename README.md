@@ -1,7 +1,5 @@
 # Bank-Customer-Chun-Prediction-Using-Machine-Learning
 
-## Newly Created Changes as hii
-
 ## 1. Project Title
 Bank Customer Churn Prediction
 (A Machine Learning-based approach to predict customer churn in banks.)
